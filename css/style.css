@@ -1,6 +1,8 @@
 body{
   background-color: black;
+  background-image: url(/img/matrix-3109378_1920.jpg);
   font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 #menufijo{
   width: 100%;
@@ -14,36 +16,41 @@ body{
 }
 #logo1{
   display: inline-block;
-  float: left;
   height: auto;
+}
+h1{
+  margin: 20px auto 15px 200px;
+  color: black;
+  font-size: 35px;
+  display: inline-block;
+  font-weight: bold;
+  text-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
 }
 .menu-fijo{
   width: auto;
   float: right;
   text-align: right;
   margin-top: 35px;
-  /*list-style-type:none;*/
 }
 .menu-fijo li{ 
   display:inline-block; 
 }
 .menu-fijo a{
   text-decoration: none;
-  font-size:0.95em;
+  font-size:0.7em;
   color: black; 
   text-shadow:1px 1px yellow;
   padding:5px 5px 15px 5px;
   font-weight: bold; 
 }
-
-h1{
-  margin: 20px auto 15px 200px;
+.menu-fijo a:hover{
   color: yellow;
-  font-size: 35px;
-  display: inline-block;
-  font-weight: bold;
-  text-shadow: black 2px 2px;
+  text-decoration: underline;
+  font-size: 0.9em;
+  text-shadow: 2px 2.2px black;
 }
+
+
 
 .subtitulos{
   text-align: center;
@@ -66,4 +73,35 @@ main{
   color: black;
   font-size: medium;
   background-color: lightgrey;
+}
+
+#caja-formulario-contacto{
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  margin-right: 15%;
+}
+#caja-formulario-contacto ul li input{
+  border:none;
+  border-radius: 10px;
+}
+#boton-enviar{
+  width: auto;
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+  border-radius: 5px;
+  transition: 1s all;
+  
+}
+#boton-enviar:hover {
+  background: #CCCC00;
+  transform: scale(1.2);
+}
+
+#mapa{
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 40px;
 }
