@@ -50,9 +50,6 @@ h1{
   text-shadow: 2px 2.2px black;
 }
 
-
-
-
 .subtitulos{
   text-align: center;
   text-shadow: 1px 1px grey;
@@ -64,9 +61,11 @@ main{
   width: 100%;
   height: auto;
 }
-#caja-foto-nombre-y-cargo{
-  width: 80%;
-  background-color: #FFF;
+#foto{
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-left:40% ;
 }
 .caja-contenidos{
   display:block ;
