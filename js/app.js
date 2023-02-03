@@ -1,26 +1,20 @@
-fetch('https://jsonplaceholder.typicode.com/posts/1')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+const botonPerfil = document.querySelector("#boton-nuevo-perfil");
+const foto = document.querySelector('#foto');
+const nombreCompleto = document.getElementById('#titulo-nombre-completo');
 
 
-$(document).ready(function() {
-  $(window).scroll(function(){
-          if(document.body.scrollTop > 300)
-                  $('#menufijo').fadeIn( "slow", function() { });
-          else    
-                  $('#menufijo').fadeOut( "slow", function() { });
-  });
-  $('#srolltotop').click(function(){
-          $('html, body').animate({scrollTop:0}, 100);
-          return false;
-  });
-});
 
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function(data) {
-    console.log(data);
-  }
-});
-    
+const generarPerfil = async () => {
+  
+    const url="https://randomuser.me/api/";
+    const respuesta = await fetch(url);
+    const {results} = await respuesta.json();
+    const datos = results[0]
+
+    // console.log(datos);
+    foto.src = datos.picture.medium;
+
+}
+document.addEventListener("DOMContentLoaded",generarPerfil)
+botonPerfil.addEventListener("click", generarPerfil);
+
