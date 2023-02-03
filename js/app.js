@@ -1,4 +1,4 @@
-// const botonPerfil = document.querySelector("#boton-nuevo-perfil");
+const botonPerfil = document.querySelector("#boton-nuevo-perfil");
 // const nombreCompleto = document.getElementById('#titulo-nombre-completo');
 
 
@@ -13,5 +13,4 @@ fetch(urlAPI)
         
 }) 
 
-// document.addEventListener("DOMContentLoaded",generarPerfil)
-// botonPerfil.addEventListener("click", generarPerfil);
+botonPerfil.addEventListener("click", generarPerfil);
