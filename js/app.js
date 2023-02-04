@@ -1,16 +1,27 @@
 const botonPerfil = document.querySelector("#boton-nuevo-perfil");
-// const nombreCompleto = document.getElementById('#titulo-nombre-completo');
 
 
 const urlAPI="https://63dd824d367aa5a7a410c63d.mockapi.io/api/v1/datos";
 
+function generarPerfil(){
+    fetch(urlAPI)
+        .then((res) =>res.json())
+        .then(data=>{
+            const aleatorio=Math.round(Math.random()*49);
 
-fetch(urlAPI)
-    .then((res) =>res.json())
-    .then(data=>{
-        const img= document.querySelector("#foto")
-        img.src = data[ Math.round(Math.random()*49)].foto;
-        
-}) 
+            const img= document.querySelector("#foto")
+            img.src = data[aleatorio].foto;
 
-botonPerfil.addEventListener("click", generarPerfil);
+            const textoNombre= data[aleatorio].nombre;
+            document.getElementById("titulo-nombre-completo").innerText=textoNombre;
+            
+            const textoProfesion= data[aleatorio].profesion;
+            document.getElementById("titulo-profesion").innerText=textoProfesion;
+
+
+    }) 
+}
+
+generarPerfil()
+
+botonPerfil.addEventListener("click", generarPerfil());
