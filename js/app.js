@@ -1,4 +1,5 @@
 const urlAPI="https://63dd824d367aa5a7a410c63d.mockapi.io/api/v1/datos";
+const urlAPI2="https://imagecdn.app/v2/image"
 
 function generarPerfil(){
     fetch(urlAPI)
@@ -53,17 +54,7 @@ function generarPerfil(){
 
             },3000)
             
-            const aleatorio1=Math.round(Math.random()*49);
-            const imagen1=document.querySelector("#img1")
-            imagen1.src=data[aleatorio1].imagenes;
-
-            // const aleatorio2=Math.round(Math.random()*15);   
-            // const imagen2=document.querySelector("#img2")
-            // imagen2.src=data[aleatorio2].imagenes;
-
-            // const aleatorio3=Math.round(Math.random()*30);
-            // const imagen3=document.getElementById("img3")
-            // imagen3.src=data[aleatorio3].imagenes; 
+            
     }) 
 }
 
