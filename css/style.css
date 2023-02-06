@@ -8,10 +8,11 @@ body{
   width: 100%;
   height:auto;
   padding:5px 48px;
-  position:relative;
+  position:fixed;
   top:0;
   background: white;
-  display: inline-block
+  display: inline-block;
+  
   /*display:none*/;
 }
 #logo1{
@@ -75,6 +76,11 @@ main{
   border-radius: 50%;
   margin-left:40% ;
 }
+#cargando{
+  display: none;
+  width: 20%;
+  margin: 10% 40%;
+}
 .caja-contenidos{
   display:block ;
   width: 80%;
@@ -86,7 +92,10 @@ main{
   font-size: medium;
   background-color: lightgrey;
 }
-
+#caja-foto-nombre-y-cargo{
+  padding-top: 50px;
+  margin-top: 150px;
+}
 #boton-volver-inicio{
   width: 15%;
   margin-left: 75%;
@@ -125,4 +134,10 @@ main{
   height: auto;
   display: inline-block;
   margin-bottom: 40px;
+}
+
+#alerta-enviado{
+  display: none;
+  margin-left: 10%;
+  position:absolute;
 }
