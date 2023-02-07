@@ -1,9 +1,9 @@
 # CV-Arg-Progama4.0
-Práctica realización de CV 
+Práctica del Curso Argentina Programa 4.0. 
 
 -Realicé una página web utilizando HTML, CCS y JS. <br>
 -Está pensada para ser vista en pantallas de 1024px o más. La responsividad la trabajaré mas adelante.<br>
--La consigna era realizar una página como un Currículum.<br>
+-La consigna era realizar una página como un Currículum utilizando temas vistos en clase.<br>
 -Utilicé una API creada con datos que yo mismo configuré para crear curriculos de personas aleatoriamente.<br>
 -Me ayude también utilizando Bootstrap y Google Fonts.<br>
 -Cambié el Favicon<br>
